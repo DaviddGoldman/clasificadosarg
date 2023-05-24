@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Clasificados de Empleo</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
     <header>
@@ -27,20 +27,15 @@
         <section class="add-post">
             <h2>Agregar Publicación</h2>
             <form action="submit_post.php" method="POST">
-                <label for="job-title">Título:</label>
-                <input type="text" id="job-title" name="job-title" required>
-                <label for="job-description">Descripción:</label>
-                <textarea id="job-description" name="job-description" required></textarea>
-                <label for="job-requirements">Requisitos:</label>
-                <textarea id="job-requirements" name="job-requirements" required></textarea>
-                <label for="contact-whatsapp">WhatsApp:</label>
-                <input type="tel" id="contact-whatsapp" name="contact-whatsapp" required>
-                <button type="submit">Agregar Publicación</button>
+                <input type="text" id="job-title" name="job-title" placeholder="Título" required>
+                <textarea id="job-description" name="job-description" placeholder="Descripción" required></textarea>
+                <textarea id="job-requirements" name="job-requirements" placeholder="Requisitos" required></textarea>
+                <a href="https://chat.whatsapp.com/DzkkdFnUFy7ApioSJ5N7zt" target="_blank" class="whatsapp-button">Publicar en WhatsApp</a>
             </form>
         </section>
     </main>
     <footer>
-        <p>© 2023 Nombre de tu empresa. Todos los derechos reservados.</p>
+        <p>© 2023 Clasificadosy+. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
